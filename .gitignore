@@ -149,3 +149,9 @@ cython_debug/
 # Miscellaneous
 .DS_Store
 Thumbs.db
+
+# Ignorar todos los archivos en el directorio de exportaciones
+exports/*
+
+# Ignorar las credenciales de Google Drive
+*credentials.json
