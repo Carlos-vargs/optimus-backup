@@ -23,8 +23,12 @@ def main():
 
 if __name__ == "__main__":
     main()
-    #creds = service_account_login()
-    #folder_path = '../exports'
+    creds = service_account_login()
+    #ruta solo para test luego se actualizara para ser dinamica
+    folder_path = '/home/carlos/personal/projects/optimus-backup/exports'
+
     # Sube la carpeta completa a Google Drive
-    #upload_folder_to_drive(folder_path)
-    # upload_file_to_drive('equipos.csv', './exports/equipos.csv', 'text/csv')
+    upload_folder_to_drive(folder_path, creds)
+
+    #  archivo individual
+    # upload_file_to_drive('equipos.csv', './exports/equipos.csv', 'text/csv', creds)
